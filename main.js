@@ -30,7 +30,7 @@ function reverseMod(v) {
     for (let i = 1; i < 268435456; i++) {
         let result = parseFloat((v * i).toFixed(8)); // reduce floating point errors
         if (result % 1 === 0) {
-            return `${result} % ${i}`;
+            return `${i} % ${result}`;
         }
     }
     return "No solution found"
